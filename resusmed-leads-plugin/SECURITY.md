@@ -1,16 +1,23 @@
-# Security Notes
+# Security Rules
 
-This repository should never include:
+This repository must not contain:
 
-- WordPress admin passwords
-- Hosting passwords
+- wp-config.php
+- database backups
+- WooCommerce order exports
+- student lists
+- customer lists
 - API keys
 - SMTP credentials
-- SendLayer credentials
 - ClickSend credentials
-- Database passwords
-- Customer/student private data
-- Exported lead lists
-- Protected health information
+- SendLayer credentials
+- private SSH keys
+- passwords
+- access tokens
+- PHI or sensitive student/customer information
 
-All credentials should stay in WordPress settings, environment variables, or secure password storage.
+If a secret is accidentally committed:
+1. Treat it as compromised.
+2. Rotate the credential immediately.
+3. Remove it from the repository.
+4. Document what happened.
