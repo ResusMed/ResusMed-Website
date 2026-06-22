@@ -1,16 +1,38 @@
 # Deployment Checklist
 
-Before uploading to ResusMed.com:
+## Before Upload
 
-- Confirm version number changed in resusmed-leads.php.
-- Confirm no test/debug code remains.
-- Confirm no passwords, API keys, tokens, or private credentials are included.
-- Zip only the resusmed-leads folder, not the full resusmed-leads-plugin folder.
-- Upload to WordPress staging first if available.
-- Test activation.
-- Test lead table.
-- Test add lead form.
-- Test email queue.
-- Test notes.
-- Test edit/delete actions.
-- Confirm no PHP fatal errors.
+- [ ] Code is in GitHub
+- [ ] Version number updated in plugin header
+- [ ] Internal version constant updated
+- [ ] CHANGELOG.md updated
+- [ ] ZIP file created from correct plugin folder
+- [ ] ZIP tested on staging
+- [ ] No API keys or passwords in files
+- [ ] No student/customer export files included
+- [ ] Rollback ZIP available
+
+## Staging Test
+
+- [ ] Plugin activates without fatal error
+- [ ] Lead form works
+- [ ] Lead appears in table
+- [ ] Edit button works
+- [ ] Notes save correctly
+- [ ] Follow-up date/time edits correctly
+- [ ] Interest Area edits correctly
+- [ ] Email templates display correctly
+- [ ] Manual template send works
+- [ ] Cron/queue behavior works
+- [ ] Delete lead does not crash site
+- [ ] Mobile/admin layout acceptable
+
+## Live Upload
+
+- [ ] Backup site first
+- [ ] Upload plugin ZIP
+- [ ] Confirm plugin version shown in WordPress
+- [ ] Test one lead
+- [ ] Test one manual email if needed
+- [ ] Confirm no critical error
+- [ ] Document deployment date
