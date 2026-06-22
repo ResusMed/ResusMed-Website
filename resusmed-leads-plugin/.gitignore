@@ -1,0 +1,36 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Archives
+*.zip
+*.tar
+*.gz
+
+# Database and exports
+*.sql
+*.sqlite
+*.csv
+*.xlsx
+
+# Secrets and environment files
+.env
+.env.*
+wp-config.php
+config.php
+secrets.php
+
+# Dependencies/build folders if ever used
+node_modules/
+vendor/
+
+# Backups
+backups/
+backup/
+exports/
